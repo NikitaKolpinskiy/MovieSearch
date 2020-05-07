@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/keyboard.css">
+    <title>MovieSearch</title>
+</head>
+<body id="body" class="body">
+    <div id="busyIndicator" class="busy-section hidden">
+        <div class="loader"></div>
+    </div>
+    <header class="header"><h1>MovieSearch</h1></header>
+    <main class="main">
+        <div class="main-section">
+            <form autocomplete="off" class="search-container">
+                <input id="search-panel" class="search-panel" type="text" placeholder="Search Movie">
+                <div class="search-wrapper">
+                    <div id="clear-field" data-name = "Clear" class="clear-search dropdown"></div>
+                    <div id="virtual-keyboard" data-name = "Keyboard" class="keyboard dropdown-right"></div>
+                </div>
+                <button id="search-button" class="search-button">Search</button>
+            </form>
+            <div id="invalid-request" class="error-container"><p></p></div>
+                <div class="main-container">
+                    <ul id="movie-slides" class="movie-container">
+                        <div id="movieCardContainerTemplate" class="movie-block flex">
+                            <li id="movieCardTemplate" class="flex">
+                                <span class="movie-title" href="#">Requiem for a Dream</span>
+                                <img class="movie-container-image" src="./images/requem.jpg" alt="Requiem">
+                                <span class="movie-year">2000</span>
+                                <div class="movie-rate">
+                                    <img src="./images/star.svg" alt="star">
+                                    <span>8.3</span>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <span href="#">A nightmare on Elm</span>
+                                <img class="movie-container-image" src="./images/nightmare1.jpg" alt="nightmare">
+                                <span>1987</span>
+                                <div class="movie-rate">
+                                    <img src="./images/star.svg" alt="star">
+                                    <span>6.6</span>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <span href="#">Dream House</span>
+                                <img class="movie-container-image" src="./images/dreamhouse.jpg" alt="">
+                                <span>2011</span>
+                                <div class="movie-rate">
+                                    <img src="./images/star.svg" alt="star">
+                                    <span>6.0</span>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="movie-block flex">
+                            <li class="flex">
+                                <span href="#">Goal! The Dream Begins</span>
+                                <img class="movie-container-image" src="./images/goal.jpg" alt="goal">
+                                <span>2005</span>
+                                <div class="movie-rate">
+                                    <img src="./images/star.svg" alt="star">
+                                    <span>6.7</span>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <span href="#">Cassandra's Dream</span>
+                                <img class="movie-container-image" src="./images/cassandra.jpg" alt="cassandra">
+                                <span>2007</span>
+                                <div class="movie-rate">
+                                    <img src="./images/star.svg" alt="star">
+                                    <span>6.7</span>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <span href="#">A Nightmare on Elm</span>
+                                <img class="movie-container-image" src="./images/nigtmare2.jpg" alt="nightmare">
+                                <span>1988</span>
+                                <div class="movie-rate">
+                                    <img src="./images/star.svg" alt="star">
+                                    <span>5.7</span>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="movie-block flex">
+                            <li class="flex">
+                                <span href="#">Arizona Dream</span>
+                                <img class="movie-container-image" src="./images/arizona.jpg" alt="arizona">
+                                <span>1993</span>
+                                <div class="movie-rate">
+                                    <img src="./images/star.svg" alt="star">
+                                    <span>7.4</span>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <span href="#">A Nightmare on Elm</span>
+                                <img class="movie-container-image" src="./images/nightmare3.jpg" alt="Nightmare">
+                                <span>1989</span>
+                                <div class="movie-rate">
+                                    <img src="./images/star.svg" alt="star">
+                                    <span>5.2</span>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <span href="#">Goal II: Living the Dream</span>
+                                <img class="movie-container-image" src="./images/goal2.jpg" alt="goal">
+                                <span>2007</span>
+                                <div class="movie-rate">
+                                    <img src="./images/star.svg" alt="star">
+                                    <span>5.7</span>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                                        <div class="slider-button left-arrow" onclick="plusSlides(-1)"></div>
+                    <div class="slider-button right-arrow" onclick="plusSlides(1)"></div>
+                    <div id="slide-bullets" class="slider-container">
+                        <span class="slider-bullet slider-bullet_active"></span>
+                        <span id="bullet" class="slider-bullet"></span>
+                        <span class="slider-bullet"></span>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <ul class="footer-container">
+            <li>RS School 2020q1</li>
+            <li class="footer-github">
+                <img src="./images/github.svg" alt="github">
+                <a target="_blank" href="https://github.com/NikitaKolpinskiy">
+                    @NikitaKolpinskiy
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/keyboard.js"></script>
+</body>
+</html>
